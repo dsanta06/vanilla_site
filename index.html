@@ -18,17 +18,23 @@
         <a href="#inicio">Início</a>
         <a href="#quem-somos">Quem somos</a>
         <a href="#adocao">Adoção</a>
-        <a href="#membro">Seja Membro</a>
+        <a href="#membro">Doe</a>
         <a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
 
+
+
+
   <main id="inicio">
     <section class="hero">
       <div class="hero-inner container">
         <div class="hero-text">
-          <h2>Adote amor. Transforme vidas.</h2>
+          <h2>
+  Adotar é  <span class="highlight"> salvar</span> vidas. Adotar é espalhar <span class="highlight"> amor</span>.
+</h2>
+
           <p>Conectamos cães e gatos resgatados a famílias prontas para amar.</p>
           <div class="hero-cta">
             <a class="btn primary" href="#adocao">Quero adotar</a>
@@ -36,22 +42,29 @@
           </div>
         </div>
         <div class="hero-media">
-          <img src="assets/hero-dog-1.jpg" alt="Cachorro para adoção" />
-        </div>
+  <div class="carousel" id="hero-carousel"
+       data-images='["assets/cachorro.jpg","assets/cachorro2.jpg","assets/gato1.jpg"]'
+       data-interval="2000"  aria-label="Fotos de animais para adoção">
+    <div class="slides"></div>
+    <button class="nav prev" aria-label="Anterior">‹</button>
+    <button class="nav next" aria-label="Próximo">›</button>
+    <div class="dots" aria-hidden="true"></div>
+  </div>
+</div>
       </div>
     </section>
 
     <section id="quem-somos" class="section">
       <div class="container">
         <header class="section-head">
-          <h3>Quem somos - OI luis </h3>
-          <p>Somos uma ONG de proteção animal que atua com resgate, reabilitação e adoção responsável.</p>
+          <h3>Quem somos </h3>
+          <p>Desde 2022, a Aliança com 4 Patas atua em Cuiabá e Várzea Grande resgatando cães e gatos em situação de risco. Já transformamos a vida de mais de 500 animais, oferecendo cuidados veterinários, acolhimento e novas chances por meio da adoção responsável. Nossa missão só é possível graças ao apoio de voluntários e parceiros que acreditam em um futuro mais digno e seguro para os animais. Junte-se a nós nessa causa!</p>
         </header>
 
         <ul class="stats">
-          <li><strong>600+</strong><span>Animais adotados</span></li>
-          <li><strong>500+</strong><span>Famílias alcançadas</span></li>
-          <li><strong>10+</strong><span>Anos de dedicação</span></li>
+          <li><strong>500+</strong><span>Animais adotados</span></li>
+          <li><strong>300+</strong><span>Famílias alcançadas</span></li>
+          <li><strong>3+</strong><span>Anos de dedicação</span></li>
         </ul>
       </div>
     </section>
@@ -62,6 +75,8 @@
           <h3>Como adotar</h3>
           <p>Nosso processo é simples, humano e responsável.</p>
         </header>
+
+    
 
         <ol class="steps">
           <li>
@@ -82,43 +97,73 @@
           </li>
         </ol>
 
-        <div class="cta-center">
-          <a class="btn primary" href="#contato">Quero começar</a>
+             <div class="cta-center">
+          <a class="btn primary" href="#contato">Iniciar processo de adoção</a>
         </div>
       </div>
     </section>
+
+          <section class="info-banner">
+  <div class="container">
+    <h3>Requisitos para Adoção</h3>
+    <ul class="requirements">
+      <li>✅ Ser maior de 18 anos</li>
+      <li>✅ Ter condições de oferecer um lar seguro e amoroso</li>
+      <li>✅ Comprometer-se com cuidados veterinários regulares</li>
+      <li>✅ Aceitar visitas de acompanhamento pós-adoção</li>
+    </ul>
+  </div>
+</section>
+
+   
 
     <section id="membro" class="section">
       <div class="container">
         <header class="section-head">
           <h3>Seja membro & apoie a causa</h3>
-          <p>Contribua mensalmente e ajude a manter resgates, cuidados e campanhas de adoção.</p>
+          <p>Contribua e ajude a manter resgates, cuidados e campanhas de adoção.</p>
         </header>
 
-        <div class="cards">
-          <article class="card">
-            <h4>Eventos</h4>
-            <p>Participe de encontros e mutirões com a comunidade.</p>
-          </article>
-          <article class="card">
-            <h4>Acompanhamento</h4>
-            <p>Receba atualizações de campanhas e animais.</p>
-          </article>
-          <article class="card">
-            <h4>Parcerias</h4>
-            <p>Descontos em pet shops e serviços parceiros.</p>
-          </article>
-          <article class="card">
-            <h4>Rede do Bem</h4>
-            <p>Conheça outras pessoas engajadas na causa animal.</p>
-          </article>
-        </div>
+  <div class="member-cards">
+  <article class="card member">
+    <div class="icon-circle">
+      <!-- tigela (ração) -->
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 15h16l-1 5H5l-1-5Z"/>
+        <path d="M3 12h18"/>
+        <path d="M7 8h.01M12 8h.01M17 8h.01"/>
+      </svg>
+    </div>
+    <h4>Contribua com rações</h4>
+  </article>
 
-        <div class="cta-center">
-          <a class="btn outline" href="#contato">Quero apoiar</a>
-        </div>
-      </div>
-    </section>
+  <article class="card member">
+    <div class="icon-circle">
+      <!-- coração/moeda -->
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-.9-1a5.5 5.5 0 1 0-7.8 7.8l8.7 8.7 8.7-8.7a5.5 5.5 0 0 0 0-7.8Z"/>
+      </svg>
+    </div>
+    <h4>Doe o valor que puder</h4>
+  </article>
+
+  <article class="card member">
+    <div class="icon-circle">
+      <!-- mãos / ação -->
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 11l3 3L22 4"/>
+        <path d="M21 12v7a2 2 0 0 1-2 2H5l-3-6 6-3"/>
+      </svg>
+    </div>
+    <h4>Participe de ações</h4>
+  </article>
+</div>
+
+<!-- mantém o botão se você já tem -->
+<div class="member-cta">
+  <a href="#contato" class="btn outline">Quero apoiar</a>
+</div>
+
 
     <section id="contato" class="section alt">
       <div class="container">
@@ -129,10 +174,10 @@
 
         <div class="contact-grid">
           <div>
-            <p><strong>Email:</strong> <a href="mailto:contato@alianca4patas.org">contato@alianca4patas.org</a></p>
-            <p><strong>WhatsApp:</strong> <a href="tel:+550000000000">(00) 00000-0000</a></p>
+            <p><strong>Email:</strong> <a href="mailto:contato@alianca4patas.org">aliancaemquatropatas@gmail.com</a></p>
+            <p><strong>WhatsApp:</strong> <a href="tel:+550000000000">(65) 99976-1013</a></p>
             <p><strong>Cidade:</strong> Cuiabá, MT</p>
-            <p><strong>PIX:</strong> <span class="pix">chave@pix.exemplo</span></p>
+            <p><strong>PIX:</strong> <span class="pix">CNPJ 49.642.637/0001-70 </span></p>
           </div>
           <form id="contact-form" onsubmit="return false;">
             <label>Nome <input required type="text" placeholder="Seu nome" /></label>
