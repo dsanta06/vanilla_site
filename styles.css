@@ -545,6 +545,67 @@ body {
   box-shadow: 0 12px 32px rgba(23,42,69,.15);
 }
 
+/* ====== Grid para os cards de exemplo de adoção dos animais ====== */
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  margin-top: 5vh;
+  padding: 10px;
+  padding-inline: 10px;
+}
+.card-custom {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card-custom:hover {
+  transform: scale(1.03);
+}
+
+.card-custom img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-custom h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #2c3e50;
+}
+
+.card-custom p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .container-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 30px;
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-grid {
+    grid-template-columns: 1fr;
+    padding-inline: 0px;
+  }
+  .card-custom img {
+    height: 160px;
+  }
+}
+
 /* ====== Banner informativo abaixo do menu ====== */
 .info-banner {
   background: linear-gradient(90deg, #60ACD5 0%, #5EC6A2 100%);

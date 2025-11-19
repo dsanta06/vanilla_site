@@ -57,3 +57,20 @@ sendBtn?.addEventListener('click', () => {
   if(images.length<=1){ prevBtn.style.display='none'; nextBtn.style.display='none'; dotsEl.style.display='none'; }
   render(); restart();
 })();
+
+function copiarTextoAdopt(card) {
+    const nome = card.querySelector('h3').innerText;
+    const texto = `Olá, me interessei no(a) ${nome}, como faço para adotar?`;
+
+    // Número do WhatsApp no formato internacional (ex: 55 = Brasil, 65 = DDD SP, 912345678 = número)
+    const numero = "5565912345678"; 
+
+    // Codifica a mensagem para URI
+    const mensagem = encodeURIComponent(texto);
+
+    // Cria o link para o WhatsApp
+    const linkWhatsApp = `https://wa.me/${numero}?text=${mensagem}`;
+
+    // Abre o link em uma nova aba ou redireciona (no celular abre o app)
+    window.open(linkWhatsApp, '_blank');
+}
