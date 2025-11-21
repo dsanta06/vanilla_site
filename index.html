@@ -38,7 +38,15 @@
 
           <p>Conectamos cães e gatos resgatados a famílias prontas para amar.</p>
           <div class="hero-cta">
-            <a class="btn primary" href="#adocao">Quero adotar</a>
+            <a
+  class="btn primary"
+  href="https://wa.me/5565999761013?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20adotar%20um%20animal%20da%20ONG."
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Quero adotar
+</a>
+
             <a class="btn outline" href="#contato">Quero ajudar</a>
           </div>
         </div>
@@ -99,7 +107,14 @@
         </ol>
 
              <div class="cta-center">
-          <a class="btn primary" href="#contato">Iniciar processo de adoção</a>
+<a
+  class="btn primary"
+  href="https://wa.me/556599761013?text=Ol%C3%A1%2C%20quero%20iniciar%20o%20processo%20de%20ado%C3%A7%C3%A3o."
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Iniciar processo de adoção
+</a>
         </div>
       </div>
     </section>
@@ -280,20 +295,49 @@
           <p>Fale com a gente para adotar, doar ou ser voluntário.</p>
         </header>
 
-        <div class="contact-grid">
-          <div>
-            <p><strong>Email:</strong> <a href="mailto:contato@alianca4patas.org">aliancaemquatropatas@gmail.com</a></p>
-            <p><strong>WhatsApp:</strong> <a href="tel:+550000000000">(65) 99976-1013</a></p>
-            <p><strong>Cidade:</strong> Cuiabá, MT</p>
-            <p><strong>PIX:</strong> <span class="pix">CNPJ 49.642.637/0001-70 </span></p>
-          </div>
-          <form id="contact-form" onsubmit="return false;">
-            <label>Nome <input required type="text" placeholder="Seu nome" /></label>
-            <label>Email <input required type="email" placeholder="seu@email.com" /></label>
-            <label>Mensagem <textarea required placeholder="Como podemos ajudar?"></textarea></label>
-            <button class="btn primary" id="send-btn">Enviar</button>
-            <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
-          </form>
+     <div class="contact-grid">
+  <!-- COLUNA ESQUERDA -->
+  <div>
+    <p><strong>Email:</strong> aliancaemquatropatas@gmail.com</p>
+    <p><strong>WhatsApp:</strong> (65) 99976-1013</p>
+    <p><strong>Cidade:</strong> Cuiabá, MT</p>
+    <p><strong>PIX:</strong> CNPJ 49.642.637/0001-70</p>
+  </div>
+
+  <!-- COLUNA DIREITA: O CARD DO FORMULÁRIO -->
+  <div class="contact-card">
+  <form
+    id="contact-form"
+    action="https://formsubmit.co/aliancaemquatropatas@gmail.com"
+    method="POST"
+  >
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Nova mensagem do site - ONG Quatro Patas">
+    <input type="hidden" name="_template" value="box">
+
+    <label>
+      Nome
+      <input type="text" name="nome" required placeholder="Seu nome" />
+    </label>
+
+    <label>
+      Email
+      <input type="email" name="email" required placeholder="seu@email.com" />
+    </label>
+
+    <label>
+      Mensagem
+      <textarea name="mensagem" required placeholder="Como podemos ajudar?"></textarea>
+    </label>
+
+    <button type="submit" class="btn primary">Enviar</button>
+  </form>
+</div>
+
+  </div>
+</div>
+
+
         </div>
       </div>
     </section>

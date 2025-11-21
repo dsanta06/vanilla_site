@@ -182,7 +182,7 @@ body {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0, 0, 0, .35);
-  background: #0d0d10
+  background: #f5f5f7
 }
 
 .hero .carousel .slides {
@@ -199,7 +199,8 @@ body {
 .hero .carousel .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   display: block
 }
 
@@ -712,4 +713,22 @@ body {
     grid-template-columns: 1fr;
     max-width: 560px;
   }
+
+  #contact-form {
+  display: grid;
+  gap: 12px;
+  background: #FFFFFF;
+  border: 1px solid #E7E8EC;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 28px rgba(23, 42, 69, .08);
+}
+
+#contact-form label {
+  display: grid;
+  gap: 6px;
+}
+
+
+
 }
